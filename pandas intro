@@ -1,0 +1,18 @@
+#Membuat dataframes dari dictionary
+import pandas as pd
+
+object = pd.DataFrame({'nama' : ['jeruk', 'apel', 'pir'], 'harga' : [12000, 15000, 17000]})
+
+print(object)
+
+#Membaca data dan memasukannya kedalam suatu variabel
+diamonds = pd.read_csv('diamonds-1.csv')
+print(diamonds)
+
+print(diamonds.price.head())
+print(diamonds.color.tail())
+
+print(diamonds.describe())
+print(diamonds.price.mean())
+print(diamonds.depth.std())
+print(diamonds.carat.max())
